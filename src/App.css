@@ -1,38 +1,81 @@
-.App {
-  text-align: center;
+html,
+body {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: 500;
+  max-width: 1280px;
+  width: 100%;
+  margin: 0px auto;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* DESIGNING DASHBOARD LAYOUT */
+.app-dashboard-layout-container {
+  width: 100%;
   display: flex;
-  flex-direction: column;
+  position: relative;
+}
+
+.app-sidebar {
+  width: 20%;
+  height: 100vh;
+  background: #231f20;
+  padding: 10px;
+  box-sizing: border-box;
+  /* #fc8019 */
+}
+
+.app-sidebar > .branding {
+  width: 90%;
+  padding: 10px 10px;
+}
+
+.branding > img {
+  width: 100%;
+}
+
+.app-content-area {
+  width: calc(100vw - 20%);
+}
+
+/* SIDEBAR STYLES */
+
+.sidebar-nav-list {
+  padding: 0px;
+  list-style-type: none;
+}
+
+.link-style {
+  width: auto;
+  height: 50px;
+  color: #ffffff;
+  background: #fc8019;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 10px;
+  box-sizing: border-box;
+  text-decoration: none;
 }
 
-.App-link {
-  color: #61dafb;
+/* APPBAR STYLING */
+.page-top-navigation {
+  width: 100%;
+  height: 70px;
+  background: #231f20;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* TOPNAVBAR STYLES */
+
+.end-enhancer > .link-container {
+  display: flex;
+  width: auto;
+  align-items: center;
+}
+
+.end-enhancer > .link-container > a {
+  margin-bottom: 0px;
+  margin-right: 10px;
 }
