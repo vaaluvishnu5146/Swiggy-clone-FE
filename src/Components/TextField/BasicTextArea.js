@@ -16,6 +16,7 @@ export default function BasicTextArea({
         id={id}
         rows="3"
         onChange={handleChange}
+        value={value}
       ></textarea>
     </div>
   );

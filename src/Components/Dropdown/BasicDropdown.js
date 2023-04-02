@@ -17,6 +17,7 @@ export default function BasicDropdown({
         aria-label="Default select example"
         id={id}
         onChange={handleChange}
+        value={value}
       >
         <option selected>{label}</option>
         {options.map((option, index) => (

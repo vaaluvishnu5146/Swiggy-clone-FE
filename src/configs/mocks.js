@@ -80,4 +80,19 @@ export const RESTAURANT_CUISINE = [
     id: "arabian",
     label: "Arabian",
   },
+  {
+    id: "american",
+    label: "American",
+  },
+];
+
+export const FOOD_TYPES = [
+  {
+    id: "veg",
+    label: "Veg",
+  },
+  {
+    id: "non veg",
+    label: "Non Veg",
+  },
 ];

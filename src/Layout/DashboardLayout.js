@@ -4,6 +4,8 @@ import RestaurantLanding from "../Pages/Restaurants/";
 import FoodLanding from "../Pages/Foods/";
 import CreateRestaurant from "../Pages/Restaurants/CreateRestaurant";
 import ManageRestaurants from "../Pages/Restaurants/ManageRestaurants";
+import CreateFoods from "../Pages/Foods/CreateFoods";
+import ManageFoods from "../Pages/Foods/ManageFoods";
 
 export default function DashboardLayout({ children }) {
   return (
@@ -26,7 +28,7 @@ export default function DashboardLayout({ children }) {
               </Link>
             </li>
             <li>
-              <Link className="link-style" to="/foods">
+              <Link className="link-style" to="/foods/manageFood">
                 Food
               </Link>
             </li>
@@ -45,7 +47,10 @@ export default function DashboardLayout({ children }) {
               Component={() => <ManageRestaurants />}
             />
           </Route>
-          <Route path="foods" Component={() => <FoodLanding />} />
+          <Route path="foods" Component={() => <FoodLanding />}>
+            <Route path="createFood/:id" Component={() => <CreateFoods />} />
+            <Route path="manageFood/" Component={() => <ManageFoods />} />
+          </Route>
         </Routes>
       </div>
     </div>

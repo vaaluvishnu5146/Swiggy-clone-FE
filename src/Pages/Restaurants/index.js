@@ -17,10 +17,8 @@ export default function index() {
           </div>
         </div>
       </div>
-      <div className="container">
-        <div className="container-fluid">
-          <Outlet />
-        </div>
+      <div className="nested-page-content-container">
+        <Outlet />
       </div>
     </section>
   );

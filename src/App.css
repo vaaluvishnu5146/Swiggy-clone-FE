@@ -1,3 +1,10 @@
+:root {
+  --primary: #fc8019;
+  --secondary: #231f20;
+  --light: #ffffff;
+  --primary20: #ffb06f;
+}
+
 html,
 body {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
@@ -17,7 +24,7 @@ body {
 .app-sidebar {
   width: 20%;
   height: 100vh;
-  background: #231f20;
+  background: var(--secondary);
   padding: 10px;
   box-sizing: border-box;
   /* #fc8019 */
@@ -25,6 +32,7 @@ body {
 
 .app-sidebar > .branding {
   width: 90%;
+  height: 70px;
   padding: 10px 10px;
 }
 
@@ -46,8 +54,8 @@ body {
 .link-style {
   width: auto;
   height: 50px;
-  color: #ffffff;
-  background: #fc8019;
+  color: var(--light);
+  background: var(--primary);
   margin-bottom: 10px;
   border-radius: 5px;
   display: flex;
@@ -61,7 +69,7 @@ body {
 .page-top-navigation {
   width: 100%;
   height: 70px;
-  background: #231f20;
+  background: var(--secondary);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -78,4 +86,22 @@ body {
 .end-enhancer > .link-container > a {
   margin-bottom: 0px;
   margin-right: 10px;
+}
+
+/* OUTLET AREA STYLE CONFIGURATION */
+.nested-page-content-container {
+  width: 100%;
+  height: calc(100vh - 70px);
+  overflow-y: scroll;
+}
+
+/* PAGE HEADER */
+.page-header {
+  width: 100%;
+  height: 200px;
+  background: var(--primary20);
+}
+
+.page-header-content {
+  width: 60%;
 }

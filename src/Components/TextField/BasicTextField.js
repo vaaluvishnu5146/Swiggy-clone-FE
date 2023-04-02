@@ -2,6 +2,7 @@ import React from "react";
 
 export default function BasicTextField({
   id = "",
+  name = "",
   label = "",
   type = "",
   placeholder = "",
@@ -16,6 +17,7 @@ export default function BasicTextField({
       <input
         type={type}
         className="form-control"
+        name={name}
         id={id}
         placeholder={placeholder}
         onChange={handleChange}
